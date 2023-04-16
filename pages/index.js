@@ -1,22 +1,25 @@
 import Header from "@/components/header";
+import WorkCard from "@/components/workCard";
 import React from "react";
 
 const index = () => {
   return (
     <>
-      <header className="grid grid-cols-2 bg-slate-100 p-24">
-        <h1 className="flex justify-center items-center text-6xl text-black font-bold">
-          Remy Kay Design
+      <header className="grid grid-cols-2 bg-neutral-100 p-24">
+        <h1 className="flex justify-center items-center text-6xl text-black font-bold tracking-wider">
+          Remy Kay
+          <br />
+          Design
         </h1>
         <aside className="grid grid-cols-2">
           <nav className="grid text-black font-semibold text-xl justify-center">
-            <a>Brand Identity</a>
-            <a>Graphic Design</a>
-            <a>Book Design</a>
-            <a>Illustration</a>
-            <a className="font-light">and you name it!</a>
+            <h2>Brand Identity</h2>
+            <h2>Graphic Design</h2>
+            <h2>Book Design</h2>
+            <h2>Illustration</h2>
+            <h2 className="font-light">and you name it!</h2>
           </nav>
-          <aside className="flex items-center">
+          <aside className="flex items-center text-black">
             <div>IMAGE</div>
           </aside>
         </aside>
@@ -28,13 +31,14 @@ const index = () => {
           <br />
           your designs
         </h2>
-        <button className="text-black bg-slate-100 py-2 px-4">
+        <button className="text-black bg-neutral-100 py-2 px-4">
           Get Connected
         </button>
       </div>
 
-      <section className="bg-slate-100 p-24">
-        <h1 className="text-black text-3xl font-bold">Featured Work</h1>
+      <section className="bg-neutral-100 p-24">
+        <h1 className="text-black text-3xl font-bold py-6">Featured Work</h1>
+        <WorkCard />
       </section>
     </>
   );
